@@ -9,6 +9,7 @@ $result = $conn->query("SELECT nilai_mahasiswa.*, mata_kuliah.Mata_Kuliah FROM n
 	<a class="btn btn-primary" href="form.php" style="">Tambah Data</a>
 </div>
 <table class="table">
+	<!-- Header Table -->
 	<tr>
 		<td>Action</td>
 		<td>Mata Kuliah</td>
