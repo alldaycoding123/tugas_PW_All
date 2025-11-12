@@ -19,11 +19,11 @@ if (isset($id)) {
 if ($_POST) {
     $Mata_Kuliah = $_POST["Mata_Kuliah"];
     $sks = $_POST["sks"];
-    $nama_dosen = $_POST["nama_dosen"];
+    $id_dosen = $_POST["id_dosen"];
     $jam = $_POST["jam"];
     $ruangan = $_POST["ruangan"];
 
-    $sql = "UPDATE mata_kuliah SET Mata_Kuliah='$Mata_Kuliah', sks='$sks', nama_dosen='$nama_dosen', jam='$jam', ruangan='$ruangan' WHERE id= '$id'";
+    $sql = "UPDATE mata_kuliah SET Mata_Kuliah='$Mata_Kuliah', sks='$sks', id_dosen='$id_dosen', jam='$jam', ruangan='$ruangan' WHERE id= '$id'";
 
     if ($conn->query($sql) === true) {
         header("location: matakuliah.php? success=1");

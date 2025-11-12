@@ -1,6 +1,6 @@
 <?php include 'includes/header.php' ?>
 <?php
-$result = $conn->query("SELECT nilai_mahasiswa.*, mata_kuliah.Mata_Kuliah FROM nilai_mahasiswa LEFT JOIN mata_kuliah ON nilai_mahasiswa.id_mata_kuliah = mata_kuliah.Mata_Kuliah");
+$result = $conn->query("SELECT nilai_mahasiswa.*, mata_kuliah.Mata_Kuliah FROM nilai_mahasiswa JOIN mata_kuliah ON nilai_mahasiswa.id_mata_kuliah = mata_kuliah.id");
 ?>
 
 <h3>selamat datang, <?= $_SESSION['name'] ?></h3>
@@ -9,7 +9,6 @@ $result = $conn->query("SELECT nilai_mahasiswa.*, mata_kuliah.Mata_Kuliah FROM n
 	<a class="btn btn-primary" href="form.php" style="">Tambah Data</a>
 </div>
 <table class="table">
-
 	<tr>
 		<td>Action</td>
 		<td>Mata Kuliah</td>

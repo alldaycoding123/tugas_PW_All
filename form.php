@@ -19,7 +19,7 @@ $Mata_Kuliah = $conn->query("SELECT * FROM mata_kuliah");
 			<label for="">Mata Kuliah</label>
 			<select class="form-control" name="id_mata_kuliah" id="id_mata_kuliah">
 				<?php while ($row = $Mata_Kuliah->fetch_assoc()): ?>
-					<option value="<?= $row['id'] ?>"><?= $row['Mata_Kuliahh'] ?></option>
+					<option value="<?= $row['id'] ?>"><?= $row['Mata_Kuliah'] ?></option>
 				<?php endwhile ?>
 			</select>
 
