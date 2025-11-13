@@ -18,5 +18,6 @@ if ($_POST) {
 } else {
     echo "Error: Invalid request method.";
 }
+
 exit;
 ?>

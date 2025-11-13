@@ -48,7 +48,6 @@ $Mata_Kuliah = $conn->query("SELECT * FROM mata_kuliah");
 	integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 	crossorigin="anonymous"></script>
 
-
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 $result = $conn->query("SELECT nilai_mahasiswa.*, mata_kuliah.Mata_Kuliah FROM nilai_mahasiswa JOIN mata_kuliah ON nilai_mahasiswa.id_mata_kuliah = mata_kuliah.id");
 ?>
 
-<h3>selamat datang, <?= $_SESSION['name'] ?></h3>
+<h3>Selamat datang, <?= $_SESSION['name'] ?></h3>
 <h2 align="center">Perhitungan Nilai Mahasiswa</h2>
 <div>
 	<a class="btn btn-primary" href="form.php" style="">Tambah Data</a>

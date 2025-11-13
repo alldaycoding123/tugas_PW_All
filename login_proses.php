@@ -5,8 +5,6 @@ include 'config/koneksi.php';
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-
-
 if (isset($email) && isset($password)) {
     $sql = "SELECT * FROM user where email='$email'";
     $result = $conn->query($sql);
